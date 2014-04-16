@@ -73,7 +73,7 @@ var FAIcon = FAIcon || {};
 	for(var i in icons){
 		var parts = icons[i].toLowerCase().split("-");
 		for(var i in parts){
-			var p = parts[p];
+			var p = parts[i];
             parts[i] = p.charAt(0).toUpperCase() + p.slice(1);
 		}
 		FAIcon["FA" + parts.join("")] = createFAIcon(icons[i]);
