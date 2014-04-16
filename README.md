@@ -12,12 +12,39 @@ View the [example](https://rawgit.com/KingKarl85/react-font-awesome/master/examp
 ## Usage
 
 ### Spin
+`<FASpinner spin='true' />` - `<i class='fa fa-spinner fa-spin'></i>`
+
+### Fixed Width
+`<FASpinner fw='true' />` - `<i class='fa fa-spinner fa-fw'></i>`
+
+### List Item
+`<FASpinner li='true' />` - `<i class='fa fa-spinner fa-li'></i>`
+
+`<FAUl><li><FAChevronRight /> Item 1</li></FAUL>` - `<ul class='fa-ul'><li><i class='fa fa-chevron-right fa-li'></i> Item 1</li></ul>`
+
+### Size
+`<FASpinner size='lg' />` - `<i class='fa fa-spinner fa-lg'></i>`
+
+### Rotate
+`<FASpinner rotate='90' />` - `<i class='fa fa-spinner fa-rotate-90'></i>`
+
+### Flip
+`<FASpinner flip='vertical' />` - `<i class='fa fa-spinner fa-flip-vertical'></i>`
+
+### Stack
+`<FASpinner stack='2x' />` - `<i class='fa fa-spinner fa-stack-2x'></i>`
+
+`<FAStack size='lg'><FACamera stack='1x'/><FABan stack='2x' className='text-danger'/></FAStack>` - `<span class='fa-stack fa-lg'><i class='fa fa-camera fa-stack-1x'></i><i class='fa fa-ban fa-stack-2x text-danger'></i></span>`
+
+### Align
+`<FASpinner align='left' />` - `<i class='fa fa-spinner fa-align-left'></i>`
+
 
 ## Extra Elements
 
 `<FAUl />` - `<ul class='fa-ul'></ul>`
 
-`<FAStack />` - `<span class="fa-stack"></span>`
+`<FAStack />` - `<span class='fa-stack'></span>`
 
 ## Icon List
 
