@@ -80,6 +80,7 @@ var FAIcon = FAIcon || {};
 
 	for(var i in icons){
 		var icon = icons[i];
+		console.log(icon, camelcase(icon));
 		FAIcon[camelcase(icon)] = createFAIcon(icon);
 	}
 
