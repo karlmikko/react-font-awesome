@@ -41,10 +41,15 @@ View the [example](https://rawgit.com/KingKarl85/react-font-awesome/master/examp
 
 `<FAStack />` - `<span class='fa-stack'></span>`
 
-`<FAAnimate />` is animated based on props give
+`<FAAnimate />` will animate children based on interval
 
-interval = (int) time in ms for frame animation interval
-classNames =[array of strings] list of short names of class of icon - this interface will probably change
+interval = (int) time in ms for frame animation interval - default 1000
+
+`<FAAnimate interval="500"><FAVolumeOff /><FAVolumeDown /><FAVolumeUp /></FAAnimate>`
+
+This will animate between off, down, up every 500ms.
+
+If no children are given then it will render `<span />`
 
 ## Icon List
 

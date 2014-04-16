@@ -67,26 +67,33 @@ var FAIcon = FAIcon || {};
 	var FAAnimate = React.createClass({displayName: 'FAAnimate',
 		getInitialState:function(){
 			return {
-				type: 0
+				childCount: 0,
+				child:(React.DOM.span(null ))
 			};
 		},
 		componentWillMount:function(){
-			this.types = this.props.classNames || [''];
-
-			this.timer = setInterval(function(){
-				var newType = this.state.type + 1;
-				if(this.types.length <= newType){
-					newType = 0;
-				}
-				this.setState({type:newType});
-			}.bind(this), this.props.interval || 1000);
+			if(this.props.children){
+				this.timer = setInterval(function(){
+					var newchild = this.state.childCount + 1;
+					if(this.props.children.length <= newchild){
+						newchild = 0;
+					}
+					this.setState({
+						childCount:newchild,
+						child:this.props.children[newchild]
+					});
+				}.bind(this), this.props.interval || 1000);
+				
+				this.setState({
+					child:this.props.children[0]
+				});
+			}
 		},
 		componentWillUnmount:function(){
 			clearInterval(this.timer);
 		},
 		render:function(){
-			this.props.type = this.types[this.state.type];
-			return Icon(this.props, this.props.children);
+			return this.state.child;
 		}
 	});
 

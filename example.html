@@ -25,9 +25,13 @@
 
 	var Playing = React.createClass({
 		render:function(){
-			this.props.interval = 800;
-			this.props.classNames = ['volume-off','volume-down','volume-up'];
-			return FAAnimate(this.props, this.props.children);
+			return(
+				<FAAnimate interval="800">
+					<FAVolumeOff />
+					<FAVolumeDown />
+					<FAVolumeUp />
+				</FAAnimate>
+			);
 		}
 	})
 
