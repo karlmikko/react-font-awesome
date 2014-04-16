@@ -73,15 +73,13 @@ var FAIcon = FAIcon || {};
 	function camelcase(str){
 		var parts = str.toLowerCase().split("-");
 		for(var i in parts){
-			parts[i][0] = parts[i][0].toUpperCase();
+            		parts[i] = parts[i].charAt(0).toUpperCase() + parts[i].slice(1);
 		}
 		return parts.join("");
 	}
 
 	for(var i in icons){
-		var icon = icons[i];
-		console.log(icon, camelcase(icon));
-		FAIcon[camelcase(icon)] = createFAIcon(icon);
+		FAIcon[camelcase(icons[i])] = createFAIcon(icons[i]);
 	}
 
 	//Register in window global for browsers
