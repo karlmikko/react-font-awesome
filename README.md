@@ -12,11 +12,13 @@ View the [example](https://rawgit.com/KingKarl85/react-font-awesome/master/examp
 ## Extra Elements
 
 `<FAUl />` - `<ul class='fa-ul'></ul>`
+
 `<FAStack />` - `<span class="fa-stack"></span>`
 
 ## Icon List
 
 `<FAIcon />` - `<i class='fa'></i>`
+
 `<FAGlass />` - `<i class='fa fa-glass'></i>`
 `<FAMusic />` - `<i class='fa fa-music'></i>`
 `<FASearch />` - `<i class='fa fa-search'></i>`
