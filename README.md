@@ -2,7 +2,7 @@
 
 Font Awesome is truely awesome - React is equally awesome!
 
-View the example to see how to use it!
+View the [https://rawgit.com/KingKarl85/react-font-awesome/master/example.html](example) to see how to use it!
 
 ## Future Development
 
