@@ -4,10 +4,6 @@ Font Awesome is truely awesome - React is equally awesome!
 
 View the [example](https://rawgit.com/KingKarl85/react-font-awesome/master/example.html) to see it in action!
 
-## Future Development
-
-* AMD include
-
 ## Usage
 
 ### Spin

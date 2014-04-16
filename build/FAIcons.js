@@ -447,3 +447,9 @@ var FAIcon = FAIcon || {};
 })(FAIcon, window);
 
 if(typeof(module) !== "undefined" && module && module.exports) module.exports = FAIcon;
+
+if(typeof(define) !== "undefined" && define && define.call){
+	define(['FAIcon'] , function (FAIcon) {
+	    return FAIcon;
+	});
+}
