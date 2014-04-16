@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>React Font Awesome</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Bootstrap -->
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+<!-- Font Awesome -->
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+<!-- React JS -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/react/0.10.0/JSXTransformer.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/react/0.10.0/react-with-addons.js"></script>
+
+<script src="assets/jsx/components/FAIcons.jsx" type="text/jsx"></script>
+<script type="text/jsx">
+	/** @jsx React.DOM */
+
+	var FAIconTest = React.createClass({
+		render: function() {
+			return (
+				<span>
+					<FAIcon type="volume-up" />
+					<br />
+					<a className="btn btn-danger" href="#"><FATrashO size="lg" /> Delete</a>
+					<br />
+					<FAStack size="lg">
+						<FASquareO stack="2x"/>
+						<FATwitter stack="1x"/>
+					</FAStack>
+					<br />
+					<FAStack size="5x">
+						<FACamera stack="1x"/>
+						<FABan stack="2x" className="text-danger"/>
+					</FAStack>
+				</span>
+			);
+		}
+	});
+
+	React.renderComponent(<FAIconTest />, document.body);
+
+</script>
+</head>
+<body>
+
+</body>
+</html>
+
