@@ -34,7 +34,15 @@ View the [example](https://rawgit.com/KingKarl85/react-font-awesome/master/examp
 ### Stack
 `<FASpinner stack='2x' />` - `<i class='fa fa-spinner fa-stack-2x'></i>`
 
-`<FAStack size='lg'><FACamera stack='1x'/><FABan stack='2x' className='text-danger'/></FAStack>` - `<span class='fa-stack fa-lg'><i class='fa fa-camera fa-stack-1x'></i><i class='fa fa-ban fa-stack-2x text-danger'></i></span>`
+`<FAStack size='lg'>
+	<FACamera stack='1x'/>
+	<FABan stack='2x' className='text-danger'/>
+</FAStack>`
+
+`<span class='fa-stack fa-lg'>
+	<i class='fa fa-camera fa-stack-1x'></i>
+	<i class='fa fa-ban fa-stack-2x text-danger'></i>
+</span>`
 
 ### Align
 `<FASpinner align='left' />` - `<i class='fa fa-spinner fa-align-left'></i>`
