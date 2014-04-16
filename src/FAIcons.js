@@ -79,7 +79,7 @@ var FAIcon = FAIcon || {};
 	}
 
 	for(var i in icons){
-		FAIcon[camelcase(icons[i])] = createFAIcon(icons[i]);
+		FAIcon["FA" + camelcase(icons[i])] = createFAIcon(icons[i]);
 	}
 
 	//Register in window global for browsers
