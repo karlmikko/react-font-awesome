@@ -41,6 +41,11 @@ View the [example](https://rawgit.com/KingKarl85/react-font-awesome/master/examp
 
 `<FAStack />` - `<span class='fa-stack'></span>`
 
+`<FAAnimate />` is animated based on props give
+
+interval = (int) time in ms for frame animation interval
+classNames =[array of strings] list of short names of class of icon - this interface will probably change
+
 ## Icon List
 
 `<FAIcon />` - `<i class='fa'></i>`
