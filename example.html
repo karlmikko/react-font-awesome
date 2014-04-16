@@ -17,11 +17,14 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/react/0.10.0/JSXTransformer.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/react/0.10.0/react-with-addons.js"></script>
 
+<!-- React Font Awesome -->
 <script src="assets/jsx/components/FAIcons.jsx" type="text/jsx"></script>
+
+<!-- Start the Example -->
 <script type="text/jsx">
 	/** @jsx React.DOM */
 
-	var FAIconTest = React.createClass({
+	var FAIconExample = React.createClass({
 		render: function() {
 			return (
 				<span>
@@ -38,12 +41,14 @@
 						<FACamera stack="1x"/>
 						<FABan stack="2x" className="text-danger"/>
 					</FAStack>
+					<br />
+					<FACalendar spin="true" />
 				</span>
 			);
 		}
 	});
 
-	React.renderComponent(<FAIconTest />, document.body);
+	React.renderComponent(<FAIconExample />, document.body);
 
 </script>
 </head>
