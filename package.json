@@ -1,0 +1,18 @@
+{
+  "name": "react-font-awesome",
+  "version": "0.0.1",
+  "description": "Font Awesome is truely awesome - React is equally awesome!",
+  "scripts": {
+    "build": "jsx src build && uglifyjs ./build/FAIcons.js -o ./build/FAIcons.min.js -c -m"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KingKarl85/react-font-awesome.git"
+  },
+  "author": "Karl Mikelsen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KingKarl85/react-font-awesome/issues"
+  },
+  "homepage": "https://github.com/KingKarl85/react-font-awesome"
+}
