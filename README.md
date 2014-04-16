@@ -9,6 +9,10 @@ View the [example](https://rawgit.com/KingKarl85/react-font-awesome/master/examp
 * AMD include
 * Create Minified JS compiled version
 
+## Usage
+
+### Spin
+
 ## Extra Elements
 
 `<FAUl />` - `<ul class='fa-ul'></ul>`
