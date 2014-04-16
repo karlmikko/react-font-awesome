@@ -7,7 +7,6 @@ View the [example](https://rawgit.com/KingKarl85/react-font-awesome/master/examp
 ## Future Development
 
 * AMD include
-* Create Minified JS compiled version
 
 ## Usage
 
