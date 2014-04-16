@@ -48,9 +48,23 @@ var FAIcon = FAIcon || {};
 		}
 	});
 
+	var FAUl = React.createClass({displayName: 'FAUl',
+		render:function(){
+			var cs = React.addons.classSet;
+			var classes = {
+				'fa-ul':true,
+			}
+			var className = cs(classes) + " " + this.props.className;
+
+			return (
+				React.DOM.ul( {className:className}, this.props.children)
+			);
+		}
+	});
 
 	FAIcon = {
 		Icon: createFAIcon(),
+		Ul: FAUl,
 		Stack: FAIconStack,
 		Glass: createFAIcon('glass'),
 		Music: createFAIcon('music'),
