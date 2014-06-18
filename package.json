@@ -1,6 +1,6 @@
 {
   "name": "react-font-awesome",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Font Awesome is truely awesome - React is equally awesome!",
   "scripts": {
     "build": "jsx src build && uglifyjs ./build/FAIcons.js -o ./build/FAIcons.min.js -c -m"
